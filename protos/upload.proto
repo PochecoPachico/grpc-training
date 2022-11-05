@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package upload;
+
+service UploadHandler {
+  rpc Upload (stream UploadRequest) returns (stream UploadReply) {}
+}
+
+message UploadRequest {
+  string msg = 1;
+}
+
+message UploadReply {
+  bytes audio = 1;
+  bytes video = 2;
+}

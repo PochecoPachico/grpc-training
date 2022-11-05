@@ -1,0 +1,6 @@
+.DS_Store
+.env
+*_pb2.py
+*_pb2_grpc.py
+__pycache__/
+.python-version
